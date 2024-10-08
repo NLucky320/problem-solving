@@ -32,7 +32,7 @@ Note: if there is nothing to sum, the sum is default to 0.
 // }
 // console.log(positiveSum([]));
 
-
+/* Write a function that removes the spaces from the string, then return the resultant string. */
 function noSpace(x) {
   const removeSpace = x.split(' ').join('')
   return removeSpace;
