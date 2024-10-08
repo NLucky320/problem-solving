@@ -285,3 +285,18 @@
 // }
 // let diff = difference([1], [1, 2])
 // console.log(diff)
+const height = [1.7, 1.65, 1.8, 1.6, 1.75];
+const weight = [30, 55, 90, 102, 65];
+for (let i = 0; i < weight.length; i++) {
+  let BMI = weight[i] / (height[i] * height[i]);
+  if (BMI < 18.5) {
+    console.log(BMI.toFixed(2) + " Underweight");
+  } else if (BMI >= 18.5 && BMI <= 24.9) {
+    console.log(BMI.toFixed(2) + " Normal Weight");
+  } else if (BMI >= 25 && BMI <= 29.9) {
+    console.log(BMI.toFixed(2) + " Overweight");
+  } else {
+    console.log(BMI.toFixed(2) + " Obese");
+  }
+}
+
