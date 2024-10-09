@@ -73,7 +73,7 @@ Notes
 The number can be negative already, in which case no change is required.
 Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense. */
 
-function makeNegative(num) {
+/* function makeNegative(num) {
   // Code?
   if (num == 0) {
     return num;
@@ -84,23 +84,33 @@ function makeNegative(num) {
   else {
     return num;
   }
-}
+} */
 
-function makeNegative(num) {
+/* function makeNegative(num) {
   if (num > 0) {
     return -num;
   } else {
     return num;
   }
 }
-
-function makeNegative(num) {
+ */
+/* function makeNegative(num) {
   return num > 0 ? -num : num;
-}
-function makeNegative(num) {
+} */
+/* function makeNegative(num) {
   return -Math.abs(num);
-}
-console.log(makeNegative(0))
+} */
+/* console.log(makeNegative(0))
 console.log(makeNegative(-5));
 console.log(makeNegative(1));
-console.log(makeNegative(0.12));
+console.log(makeNegative(0.12)); */
+
+/* Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+
+Example
+['hello', 'world', 'this', 'is', 'great']  => 'hello world this is great' */
+
+function smash (words) {
+  return words.join(' ');
+};
+console.log(smash(["hello", "world", "this", "is", "great"]));
