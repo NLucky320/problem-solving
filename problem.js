@@ -141,8 +141,33 @@ Examples
 "1405" --> 1405
 "-7" --> -7 */
 
-const stringToNumber = function (str) {
+/* const stringToNumber = function (str) {
   // put your code here
   return Number(str);
 };
 console.log(stringToNumber("-7"));
+ */
+/* Given an array of integers your solution should find the smallest integer.
+
+For example:
+
+Given [34, 15, 88, 2] your solution will return 2
+Given [34, -345, -1, 100] your solution will return -345
+You can assume, for the purpose of this kata, that the supplied array will not be empty. */
+
+/* function findSmallestInt(arr) {
+  //your code here
+return arr.reduce(
+    (smallestValue, currentValue) =>
+      currentValue < smallestValue ? currentValue : smallestValue
+  );
+} */
+
+/* class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+} */
+
+// console.log(findSmallestInt([34, -345, -1, 100]));
+  
