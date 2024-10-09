@@ -110,7 +110,23 @@ console.log(makeNegative(0.12)); */
 Example
 ['hello', 'world', 'this', 'is', 'great']  => 'hello world this is great' */
 
-function smash (words) {
+/* function smash (words) {
   return words.join(' ');
-};
-console.log(smash(["hello", "world", "this", "is", "great"]));
+}; */
+// console.log(smash(["hello", "world", "this", "is", "great"]));
+
+/* We need a function that can transform a number (integer) into a string.
+
+What ways of achieving this do you know?
+
+Examples (input --> output):
+123  --> "123"
+999  --> "999"
+-100 --> "-100" */
+
+function numberToString(num) {
+  // Return a string of the number here!
+  return num.toString();
+}
+console.log(numberToString(-100));
+console.log(5)
