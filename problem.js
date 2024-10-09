@@ -28,7 +28,7 @@ Note: if there is nothing to sum, the sum is default to 0.
 //       total += arr[i];
 //     }
 //   }
-//   return total; 
+//   return total;
 // }
 // console.log(positiveSum([]));
 
@@ -51,7 +51,7 @@ Example(Input1, Input2 --> Output):
 Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle. */
 
 
-const areaOrPerimeter = function (l, w) {
+/* const areaOrPerimeter = function (l, w) {
   // Return your answer
   if (l == w) {
     return l * w;
@@ -60,4 +60,47 @@ const areaOrPerimeter = function (l, w) {
     return (2 * (l + w));
   }
 };
-console.log(areaOrPerimeter(6, 10));
+console.log(areaOrPerimeter(6, 10)); */
+/* 
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+Examples
+makeNegative(1);    // return -1
+makeNegative(-5);   // return -5
+makeNegative(0);    // return 0
+makeNegative(0.12); // return -0.12
+Notes
+The number can be negative already, in which case no change is required.
+Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense. */
+
+function makeNegative(num) {
+  // Code?
+  if (num == 0) {
+    return num;
+  }
+  else if (num > 0) {
+    return -num;
+  }
+  else {
+    return num;
+  }
+}
+
+function makeNegative(num) {
+  if (num > 0) {
+    return -num;
+  } else {
+    return num;
+  }
+}
+
+function makeNegative(num) {
+  return num > 0 ? -num : num;
+}
+function makeNegative(num) {
+  return -Math.abs(num);
+}
+console.log(makeNegative(0))
+console.log(makeNegative(-5));
+console.log(makeNegative(1));
+console.log(makeNegative(0.12));
