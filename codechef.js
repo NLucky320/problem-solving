@@ -285,7 +285,7 @@
 // }
 // let diff = difference([1], [1, 2])
 // console.log(diff)
-const height = [1.7, 1.65, 1.8, 1.6, 1.75];
+/* const height = [1.7, 1.65, 1.8, 1.6, 1.75];
 const weight = [30, 55, 90, 102, 65];
 for (let i = 0; i < weight.length; i++) {
   let BMI = weight[i] / (height[i] * height[i]);
@@ -298,5 +298,26 @@ for (let i = 0; i < weight.length; i++) {
   } else {
     console.log(BMI.toFixed(2) + " Obese");
   }
-}
+} */
 
+/* 
+You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
+If it is a square, return its area. If it is a rectangle, return its perimeter.
+
+Example(Input1, Input2 --> Output):
+
+6, 10 --> 32
+3, 3 --> 9
+Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle. */
+
+
+const areaOrPerimeter = function (l, w) {
+  // Return your answer
+  if (l == w) {
+    return l * w;
+  }
+  else {
+    return (2 * (l + w));
+  }
+};
+console.log(areaOrPerimeter(6, 10));
