@@ -33,10 +33,31 @@ Note: if there is nothing to sum, the sum is default to 0.
 // console.log(positiveSum([]));
 
 /* Write a function that removes the spaces from the string, then return the resultant string. */
-function noSpace(x) {
+/* function noSpace(x) {
   const removeSpace = x.split(' ').join('')
   return removeSpace;
 }
 console.log(noSpace("8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd"));
+ */
+
+/* 
+You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
+If it is a square, return its area. If it is a rectangle, return its perimeter.
+
+Example(Input1, Input2 --> Output):
+
+6, 10 --> 32
+3, 3 --> 9
+Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle. */
 
 
+const areaOrPerimeter = function (l, w) {
+  // Return your answer
+  if (l == w) {
+    return l * w;
+  }
+  else {
+    return (2 * (l + w));
+  }
+};
+console.log(areaOrPerimeter(6, 10));
