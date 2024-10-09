@@ -124,9 +124,25 @@ Examples (input --> output):
 999  --> "999"
 -100 --> "-100" */
 
-function numberToString(num) {
+/* function numberToString(num) {
   // Return a string of the number here!
   return num.toString();
 }
 console.log(numberToString(-100));
-console.log(5)
+console.log(5) */
+
+/* We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+
+Examples
+"1234" --> 1234
+"605"  --> 605
+"1405" --> 1405
+"-7" --> -7 */
+
+const stringToNumber = function (str) {
+  // put your code here
+  return Number(str);
+};
+console.log(stringToNumber("-7"));
