@@ -204,7 +204,7 @@ console.log(makeUpperCase('lucky')) */
 
 // Note: Empty arrays should return 0.
 
-function findAverage(array) {
+/* function findAverage(array) {
   // your code here
   if (array.length === 0) {
     return 0;
@@ -217,4 +217,13 @@ function findAverage(array) {
       return sum / array.length;
   }
 }
-console.log(findAverage([]))
+console.log(findAverage([])) */
+
+/* Write function RemoveExclamationMarks which removes all exclamation marks from a given string. */
+
+/* function removeExclamationMarks(s) {
+  // return s.replace("!","");
+  //  return s.replace(/!/g, "");
+  return s.replaceAll("!", "");
+}
+console.log(removeExclamationMarks("Hello World!")) */
