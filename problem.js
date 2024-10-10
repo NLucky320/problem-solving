@@ -194,9 +194,27 @@ Input constraints:
 // }
 
 // Write a function which converts the input string to uppercase.
-
-function makeUpperCase(str) {
+/* function makeUpperCase(str) {
   // Code here
   return str.toUpperCase();
 }
-console.log(makeUpperCase('lucky'))
+console.log(makeUpperCase('lucky')) */
+
+// Write a function which calculates the average of the numbers in a given list.
+
+// Note: Empty arrays should return 0.
+
+function findAverage(array) {
+  // your code here
+  if (array.length === 0) {
+    return 0;
+  }
+  else {
+      let sum = 0;
+      for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+      }
+      return sum / array.length;
+  }
+}
+console.log(findAverage([]))
