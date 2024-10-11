@@ -285,6 +285,20 @@ Note: Only valid inputs will be given. */
 }
 console.log(booleanToString(true)) */
 
+/* Each number should be formatted that it is rounded to two decimal places. You don't need to check whether the input is a valid number because only valid numbers are used in the tests.
+ */
+
+function twoDecimalPlaces(n) {
+  // Your code here
+  /* return n.toFixed(2); */
+  // return Number(n.toFixed(2));
+  return Math.round(n * 100) / 100;
+}
+console.log(twoDecimalPlaces(4.659725356));
+console.log(twoDecimalPlaces(-3.3424));
+
+
+
 /* Return the number (count) of vowels in the given string.
 
 We will consider a, e, i, o, u as vowels for this Kata (but not y).
