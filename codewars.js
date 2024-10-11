@@ -249,3 +249,39 @@ Return true if the array contains the value, false if not. */
 };
 console.log(check(['what', 'a', 'great', 'kata'], 'kat'))
 console.log(check(["t", "e", "s", "t"], "e")); */
+
+/* Create a method that takes an array/list as an input, and outputs the index at which the sole odd number is located.
+
+This method should work with arrays with negative numbers. If there are no odd numbers in the array, then the method should output -1. */
+
+
+function oddOne(arr) {
+  // Code here
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] % 2 != 0) {
+      return i;
+    } 
+  }
+      return -1;
+    
+}
+function oddOne(arr) {
+  return arr.findIndex((x) => x % 2 != 0);
+}
+console.log(oddOne([2, 4, 6, 7, 10]));
+console.log(oddOne([2, 16, 98, 10, 13, 78]));
+console.log(oddOne([4, -8, 98, -12, -7, 90, 100]));
+console.log(oddOne([2, 4, 6, 8]));
+
+
+
+/* Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+The input string will only consist of lower case letters and/or spaces. */
+
+function getCount(str) {
+  
+  return 0;
+}
