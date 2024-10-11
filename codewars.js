@@ -1,11 +1,11 @@
 /* Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".
  */
-function greetings(name) {
+/* function greetings(name) {
   return `Hello, ${name} how are you doing today?`;
 }
 
 let greet = greetings("lucky");
-console.log(greet);
+console.log(greet); */
 
 /* You get an array of numbers, return the sum of all of the positives ones.
 Example [1,-4,7,12] => 1 + 7 + 12 = 20
