@@ -303,7 +303,7 @@ Complete the function that takes a string as an argument representing the curren
 
 For example, when the input is green, output should be yellow. */
 
-function updateLight(current) {
+/* function updateLight(current) {
   //your code here!
   if (current == 'green') {
     return 'yellow'
@@ -317,8 +317,8 @@ function updateLight(current) {
   else {
     return ''
   }
-}
-
+} */
+/* 
 function updateLight(current) {
   return current === "yellow"
     ? "red"
@@ -326,11 +326,27 @@ function updateLight(current) {
     ? "yellow"
     : "green";
 }
+ */
+
+// console.log(updateLight('green'))
+// console.log(updateLight('yellow'));
+// console.log(updateLight('red'))
+
+/* Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+
+If the input is an empty array or is null, return an empty array.
+
+Example
+For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65]. */
 
 
-console.log(updateLight('green'))
-console.log(updateLight('yellow'));
-console.log(updateLight('red'))
+
+function countPositivesSumNegatives(input) {
+  // your code here
+}
+
+
+
 
 
 
