@@ -377,7 +377,7 @@ Examples (Input -> Output)
 * [42, 54, 65, 87, 0]             -> min = 0, max = 87
 * [5]                             -> min = 5, max = 5 */
 
-var min = function (list) {
+/* var min = function (list) {
   let minValue = list[0]; 
   for (let i = 1; i < list.length; i++) {
     if (list[i] < minValue) {
@@ -419,10 +419,22 @@ var max = function (list) {
 };
 
 console.log(min([-52, 56, 30, 29, -54, 0, -110]));
-console.log(max([-52, 56, 30, 29, -54, 0, -110]));
+console.log(max([-52, 56, 30, 29, -54, 0, -110])); */
+
+/* 
+You are given two interior angles (in degrees) of a triangle.
+
+Write a function to return the 3rd.
+
+Note: only positive integers will be tested. */
 
 
+function otherAngle(a, b) {
 
+  return (180 - (a + b));
+  
+}
+console.log(otherAngle(10,20))
 
 /* Return the number (count) of vowels in the given string.
 
