@@ -444,7 +444,7 @@ For example:
 1.08 --> 30
 Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer. */
 
-function cockroachSpeed(s) {
+/* function cockroachSpeed(s) {
   //Good Luck!
   return Math.trunc(s * 100000 / 3600);
 }
@@ -453,7 +453,7 @@ function cockroachSpeed(s) {
 console.log(cockroachSpeed(1.08))
 console.log(cockroachSpeed(1.09))
 console.log(cockroachSpeed(0))
-
+ */
 
 
 
