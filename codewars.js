@@ -493,8 +493,34 @@ function simpleMultiplication(n) {
 console.log(simpleMultiplication(2))
 console.log(simpleMultiplication(1)) */
 
+/* 
+Given an integral number, determine if it's a square number:
 
+In mathematics, a square number or perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself.
 
+The tests will always use some integral number, so don't worry about that in dynamic typed languages.
+
+Examples
+-1  =>  false
+ 0  =>  true
+ 3  =>  false
+ 4  =>  true
+25  =>  true
+26  =>  false */
+
+var isSquare = function (n) {
+  if (n < 0) {
+    return false;
+  }
+  let sqrt = Math.sqrt(n);
+  return sqrt===Math.floor(sqrt)
+};
+console.log(isSquare(-1)); 
+console.log(isSquare(0)); 
+console.log(isSquare(3)); 
+console.log(isSquare(4)); 
+console.log(isSquare(25)); 
+console.log(isSquare(26)); 
 /* Return the number (count) of vowels in the given string.
 
 We will consider a, e, i, o, u as vowels for this Kata (but not y).
