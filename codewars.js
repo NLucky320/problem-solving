@@ -517,8 +517,10 @@ var isSquare = function (n) {
 };
 
 function isSquare(n) {
+  if (n < 0 || !Number.isInteger(n)) return false;
   return Math.sqrt(n) % 1 === 0;
 }
+
 console.log(isSquare(-1)); 
 console.log(isSquare(0)); 
 console.log(isSquare(3)); 
