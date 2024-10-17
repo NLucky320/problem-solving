@@ -467,14 +467,25 @@ Examples: (Input --> Output)
 [] --> []
 ["a", "b", "c"] --> ["1: a", "2: b", "3: c"] */
 
-var number = function (array) {
+/* var number = function (array) {
   //your awesome code here
     return array.map((item, index) => {
       return `${index + 1}: ${item}`;
     });
 };
 
-console.log(number(["a", "b", "c"]))
+console.log(number(["a", "b", "c"])) */
+
+/* This kata is about multiplying a given number by eight if it is an even number and by nine otherwise. */
+
+function simpleMultiplication(number) {
+  // your code........
+
+  
+}
+
+
+
 
 /* Return the number (count) of vowels in the given string.
 
