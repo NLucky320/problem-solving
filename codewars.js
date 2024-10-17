@@ -478,7 +478,7 @@ console.log(number(["a", "b", "c"])) */
 
 /* This kata is about multiplying a given number by eight if it is an even number and by nine otherwise. */
 
-function simpleMultiplication(number) {
+/* function simpleMultiplication(number) {
   // your code........
   if (number % 2 == 0) {
     return number * 8;
@@ -487,8 +487,11 @@ function simpleMultiplication(number) {
     return number * 9;
 }
 }
+function simpleMultiplication(n) {
+  return n * (n % 2 ? 9 : 8);
+}
 console.log(simpleMultiplication(2))
-console.log(simpleMultiplication(1))
+console.log(simpleMultiplication(1)) */
 
 
 
