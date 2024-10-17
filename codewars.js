@@ -480,10 +480,15 @@ console.log(number(["a", "b", "c"])) */
 
 function simpleMultiplication(number) {
   // your code........
-
-  
+  if (number % 2 == 0) {
+    return number * 8;
 }
-
+  else {
+    return number * 9;
+}
+}
+console.log(simpleMultiplication(2))
+console.log(simpleMultiplication(1))
 
 
 
