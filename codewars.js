@@ -508,7 +508,7 @@ Examples
 25  =>  true
 26  =>  false */
 
-var isSquare = function (n) {
+/* var isSquare = function (n) {
   if (n < 0) {
     return false;
   }
@@ -525,8 +525,7 @@ console.log(isSquare(-1));
 console.log(isSquare(0)); 
 console.log(isSquare(3)); 
 console.log(isSquare(4)); 
-console.log(isSquare(25)); 
-console.log(isSquare(26)); 
+console.log(isSquare(26));  */
 /* Return the number (count) of vowels in the given string.
 
 We will consider a, e, i, o, u as vowels for this Kata (but not y).
