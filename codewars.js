@@ -533,9 +533,20 @@ We will consider a, e, i, o, u as vowels for this Kata (but not y).
 The input string will only consist of lower case letters and/or spaces. */
 
 function getCount(str) {
-  
-  return 0;
+  let vowelsCount = 0;
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  for (let char of str){
+    if (vowels.includes(char)) {
+      vowelsCount++;
+    }
+  }
+  return vowelsCount;
 }
+
+function getCount(str) {
+  return (str.match(/[aeiou]/gi) || []).length;
+}
+console.log(getCount('abcdefghijklmnopqrstuvwxyz'))
 /* 
 Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0. Your function only needs to return the result, what is shown between parentheses in the example below is how you reach that result and it's not part of it, see the sample tests. */
 var summation = function (num) {
