@@ -554,13 +554,17 @@ don't worry about uppercase vowels
 y is not considered a vowel for this kata */
 
 
-function shortcut(string) {
+/* function shortcut(string) {
 
 return string.replace(/[aeiou]/ig, '');
-}
+} */
 
 
-console.log(shortcut('Hello'))
+// console.log(shortcut('Hello'))
+
+
+
+
 
 
 /* function getCount(str) {
