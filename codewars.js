@@ -532,7 +532,7 @@ We will consider a, e, i, o, u as vowels for this Kata (but not y).
 
 The input string will only consist of lower case letters and/or spaces. */
 
-function getCount(str) {
+/* function getCount(str) {
   let vowelsCount = 0;
   const vowels = ['a', 'e', 'i', 'o', 'u'];
   for (let char of str){
@@ -541,12 +541,32 @@ function getCount(str) {
     }
   }
   return vowelsCount;
+} */
+
+/* Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
+
+Examples
+"hello"     -->  "hll"
+"codewars"  -->  "cdwrs"
+"goodbye"   -->  "gdby"
+"HELLO"     -->  "HELLO"
+don't worry about uppercase vowels
+y is not considered a vowel for this kata */
+
+
+function shortcut(string) {
+
+return string.replace(/[aeiou]/ig, '');
 }
 
-function getCount(str) {
-  return (str.match(/[aeiou]/gi) || []).length;
+
+console.log(shortcut('Hello'))
+
+
+/* function getCount(str) {
+  return (str.match(/[aeiou]/ig) || []).length;
 }
-console.log(getCount('abcdefghijklmnopqrstuvwxyz'))
+console.log(getCount('abcdefghijklmnopqrstuvwxyz')) */
 /* 
 Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0. Your function only needs to return the result, what is shown between parentheses in the example below is how you reach that result and it's not part of it, see the sample tests. */
 var summation = function (num) {
