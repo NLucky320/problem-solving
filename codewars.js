@@ -576,7 +576,7 @@ Vowels in this context refers to: a e i o u y (including upper case)
 This is indexed from [1..n] (not zero indexed!) */
 
 function vowelIndices(word) {
-  const vowels = ["a", "e", "i", "o", "u", "y"];
+  const vowels = ["a", "e", "i", "o", "u"];
   let indices = [];
 
   for (let i = 0; i < word.length; i++) {
