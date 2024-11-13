@@ -24,7 +24,7 @@ Note: if there is nothing to sum, the sum is default to 0.
 //   for (i = 0; i < arr.length; i++) {
 
 //     if (arr[i] > 0) {
-  
+
 //       total += arr[i];
 //     }
 //   }
@@ -49,7 +49,6 @@ Example(Input1, Input2 --> Output):
 6, 10 --> 32
 3, 3 --> 9
 Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle. */
-
 
 /* const areaOrPerimeter = function (l, w) {
   // Return your answer
@@ -190,7 +189,6 @@ Input constraints:
 // function past(h, m, s) {
 //   //#Happy Coding! ^_^
 
-
 // }
 
 // Write a function which converts the input string to uppercase.
@@ -254,7 +252,6 @@ console.log(check(["t", "e", "s", "t"], "e")); */
 
 This method should work with arrays with negative numbers. If there are no odd numbers in the array, then the method should output -1. */
 
-
 /* function oddOne(arr) {
   // Code here
   for (let i = 0; i < arr.length; i++){
@@ -273,7 +270,6 @@ console.log(oddOne([2, 16, 98, 10, 13, 78]));
 console.log(oddOne([4, -8, 98, -12, -7, 90, 100]));
 console.log(oddOne([2, 4, 6, 8]));
  */
-
 
 /* Implement a function which convert the given boolean value into its string representation.
 
@@ -332,42 +328,40 @@ function updateLight(current) {
 // console.log(updateLight('yellow'));
 // console.log(updateLight('red'))
 
-/* Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+/* Return an array, where the first element is the n of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
 
 If the input is an empty array or is null, return an empty array.
 
 Example
 For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65]. */
 
-
 /* 
-function countPositivesSumNegatives(input) {
+function nPositivesSumNegatives(input) {
   // your code here
   if (!input || input.length === 0) {
     return [];
   }
-  let countPositives = 0;
+  let nPositives = 0;
   let sumNegatives = 0;
   for (let i = 0; i < input.length; i++){
  
     if (input[i] > 0) {
 
-      countPositives++;
+      nPositives++;
     }
     else if(input[i]<0) {
     sumNegatives+=input[i]
     }
   }
-  return [countPositives,sumNegatives];
+  return [nPositives,sumNegatives];
 
 } */
 
 // console.log(
-//   countPositivesSumNegatives([
+//   nPositivesSumNegatives([
 //     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15,
 //   ])
 // );
-
 
 /* Your task is to make two functions ( max and min, or maximum and minimum, etc., depending on the language ) that receive a list of integers as input, and return the largest and lowest number in that list, respectively.
 
@@ -436,7 +430,6 @@ function otherAngle(a, b) {
 }
 console.log(otherAngle(10,20)) */
 
-
 /* The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
 
 For example:
@@ -454,7 +447,6 @@ console.log(cockroachSpeed(1.08))
 console.log(cockroachSpeed(1.09))
 console.log(cockroachSpeed(0))
  */
-
 
 /* Your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
 
@@ -526,21 +518,21 @@ console.log(isSquare(0));
 console.log(isSquare(3)); 
 console.log(isSquare(4)); 
 console.log(isSquare(26));  */
-/* Return the number (count) of vowels in the given string.
+/* Return the number (n) of vowels in the given string.
 
 We will consider a, e, i, o, u as vowels for this Kata (but not y).
 
 The input string will only consist of lower case letters and/or spaces. */
 
-/* function getCount(str) {
-  let vowelsCount = 0;
+/* function getn(str) {
+  let vowelsn = 0;
   const vowels = ['a', 'e', 'i', 'o', 'u'];
   for (let char of str){
     if (vowels.includes(char)) {
-      vowelsCount++;
+      vowelsn++;
     }
   }
-  return vowelsCount;
+  return vowelsn;
 } */
 
 /* Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
@@ -553,12 +545,10 @@ Examples
 don't worry about uppercase vowels
 y is not considered a vowel for this kata */
 
-
 /* function shortcut(string) {
 
 return string.replace(/[aeiou]/ig, '');
 } */
-
 
 // console.log(shortcut('Hello'))
 
@@ -581,26 +571,22 @@ function vowelIndices(word) {
 
   for (let i = 0; i < word.length; i++) {
     if (vowels.includes(word[i].toLowerCase())) {
-      indices.push(i + 1); 
+      indices.push(i + 1);
     }
   }
 
   return indices;
 }
 
-console.log(vowelIndices("orange"));  
-console.log(vowelIndices("super"));   
-console.log(vowelIndices("Mmmm"));  
-console.log(vowelIndices("Apple"));  
+console.log(vowelIndices("orange"));
+console.log(vowelIndices("super"));
+console.log(vowelIndices("Mmmm"));
+console.log(vowelIndices("Apple"));
 
-
-
-
-
-/* function getCount(str) {
+/* function getn(str) {
   return (str.match(/[aeiou]/ig) || []).length;
 }
-console.log(getCount('abcdefghijklmnopqrstuvwxyz')) */
+console.log(getn('abcdefghijklmnopqrstuvwxyz')) */
 /* 
 Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0. Your function only needs to return the result, what is shown between parentheses in the example below is how you reach that result and it's not part of it, see the sample tests. */
 var summation = function (num) {

@@ -12,19 +12,19 @@ function isLeap(year) {
 }
 
 let output = [];
-let count = 1;
+let n = 1;
 
 function fizzBuzz() {
-  if (count % 3 === 0 && count % 5 == 0) {
+  if (n % 3 === 0 && n % 5 == 0) {
     output.push("fizbuzzz");
-  } else if (count % 3 === 0) {
+  } else if (n % 3 === 0) {
     output.push("fizz");
-  } else if (count % 5 === 0) {
+  } else if (n % 5 === 0) {
     output.push("buzz");
   } else {
-    output.push(count);
+    output.push(n);
   }
 
-  count++;
+  n++;
   console.log(output);
 }
