@@ -578,10 +578,10 @@ function vowelIndices(word) {
   return indices;
 }
 
-console.log(vowelIndices("orange"));
-console.log(vowelIndices("super"));
-console.log(vowelIndices("Mmmm"));
-console.log(vowelIndices("Apple"));
+// console.log(vowelIndices("orange"));
+// console.log(vowelIndices("super"));
+// console.log(vowelIndices("Mmmm"));
+// console.log(vowelIndices("Apple"));
 
 /* function getn(str) {
   return (str.match(/[aeiou]/ig) || []).length;
@@ -592,3 +592,16 @@ Write a program that finds the summation of every number from 1 to num. The numb
 var summation = function (num) {
   // Code here
 };
+
+// Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid. Write a function to help Bob with this calculation.
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    // your code here
+    let volume = length * width * height;
+
+
+    return volume;
+  }
+}
+Kata.getVolumeOfCuboid(1,2,2)
+Kata.getVolumeOfCuboid(6, 2, 5);
